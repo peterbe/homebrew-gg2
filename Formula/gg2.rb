@@ -1,3 +1,10 @@
+# Notes-to-self
+# Inspirations taken from
+# https://github.com/Homebrew/homebrew-cask/blob/main/Casks/c/claude-code.rb
+# https://github.com/sinelaw/homebrew-fresh/blob/main/Formula/fresh-editor.rb
+# https://github.com/searlsco/homebrew-tap/blob/main/Formula/imsg.rb
+# https://github.com/searlsco/homebrew-tap/blob/main/Formula/autochapter.rb
+
 class Gg2 < Formula
   desc "CLI tool for creating, committing, and generally managing your git branches"
   homepage "https://github.com/peterbe/gg2"
@@ -24,28 +31,8 @@ class Gg2 < Formula
   end
   license "MIT"
 
-  # BINARY_ALIASES = {
-  #   "aarch64-apple-darwin":      {},
-  #   "aarch64-unknown-linux-gnu": {},
-  #   "x86_64-apple-darwin":       {},
-  #   "x86_64-pc-windows-gnu":     {},
-  #   "x86_64-unknown-linux-gnu":  {},
-  # }.freeze
+  # TODO
 
-  # def target_triple
-  #   cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
-  #   os = OS.mac? ? "apple-darwin" : "unknown-linux-gnu"
-
-  #   "#{cpu}-#{os}"
-  # end
-
-  # def install_binary_aliases!
-  #   BINARY_ALIASES[target_triple.to_sym].each do |source, dests|
-  #     dests.each do |dest|
-  #       bin.install_symlink bin/source.to_s => dest
-  #     end
-  #   end
-  # end
 
   def install
     bin.install "gg-darwin-arm64" => "gg2" if OS.mac? && Hardware::CPU.arm?
