@@ -1,50 +1,5 @@
-# class Gg2 < Formula
-#   desc "I'll think of a better name later"
-#   homepage "https://github.com/peterbe/gg2"
-#   url "https://github.com/peterbe/gg2/archive/refs/tags/v0.0.13.tar.gz"
-#   sha256 "cb12cdf30e674e55b3ed106ab0b20647dea43b3ef15b9051eb6a798f43f4b27d"
-#   license "MIT"
-
-#   uses_from_macos "ruby"
-
-#   # Additional dependency
-#   # resource "" do
-#   #   url ""
-#   #   sha256 ""
-#   # end
-
-#   def install
-#     ENV["BUNDLE_FORCE_RUBY_PLATFORM"] = "1"
-#     ENV["BUNDLE_WITHOUT"] = "development test"
-#     ENV["BUNDLE_VERSION"] = "system" # Avoid installing Bundler into the keg
-#     ENV["GEM_HOME"] = libexec
-
-#     system "bundle", "install"
-#     system "gem", "build", "#{name}.gemspec"
-#     system "gem", "install", "#{name}-#{version}.gem"
-
-#     bin.install libexec/"bin/#{name}"
-#     bin.env_script_all_files(libexec/"bin", GEM_HOME: ENV["GEM_HOME"])
-#   end
-
-#   test do
-#     # `test do` will create, run in and delete a temporary directory.
-#     #
-#     # This test will fail and we won't accept that! For Homebrew/homebrew-core
-#     # this will need to be a test that verifies the functionality of the
-#     # software. Run the test with `brew test gg2`. Options passed
-#     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-#     #
-#     # The installed folder is not in the path, so use the entire path to any
-#     # executables being tested: `system bin/"program", "do", "something"`.
-#     system "false"
-#   end
-# end
-
-
-
 class Gg2 < Formula
-  desc "CLI tool for creating, committing, and generally managing your git branches."
+  desc "CLI tool for creating, committing, and generally managing your git branches"
   homepage "https://github.com/peterbe/gg2"
   version "0.0.13"
   if OS.mac?
