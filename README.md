@@ -41,3 +41,9 @@ To iteratively install and re-install, I run:
 ```bash
 brew install --verbose gg2
 ```
+
+To lint the formula, run:
+
+```bash
+brew style peterbe/gg2
+```
