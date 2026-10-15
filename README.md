@@ -47,3 +47,10 @@ To lint the formula, run:
 ```bash
 brew style peterbe/gg2
 ```
+
+How I upgraded the formula
+
+1. Manually edit the version numbers inside `gg2.rb`
+2. For each file URL and for the top-level `version`
+3. For each file, run, for example: `curl -sL https://github.com/peterbe/gg2/releases/download/v0.0.15/gg-linux-x64 | shasum -a 256` to get the checksum
+

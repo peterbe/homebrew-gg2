@@ -8,25 +8,25 @@
 class Gg2 < Formula
   desc "CLI tool for creating, committing, and generally managing your git branches"
   homepage "https://github.com/peterbe/gg2"
-  version "0.0.13"
+  version "0.0.15"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/peterbe/gg2/releases/download/v0.0.13/gg-darwin-arm64"
-      sha256 "c53bce15df833fa1815b5d85bd6a5b6584ce1f4caecf151b5973b74d64e1c38e"
+      url "https://github.com/peterbe/gg2/releases/download/v0.0.15/gg-darwin-arm64"
+      sha256 "28336a20a28f85ae3dc9bddea751e05ddc31a23f3b1a64037d02a00b6c874560"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/peterbe/gg2/releases/download/v0.0.13/gg-darwin-x64"
-      sha256 "2380e15da47ba5f4159b6706272e821b9d84b67b1780b38ccdc0480646af8d08"
+      url "https://github.com/peterbe/gg2/releases/download/v0.0.15/gg-darwin-x64"
+      sha256 "3da4917da86df34aa4c65ff0a9f2a2e8a28f14eda52e7e523e01abe5c9b6092c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/peterbe/gg2/releases/download/v0.0.13/gg-linux-arm64"
-      sha256 "1c141b63bd190a1366205a7b71b3e32fe76cdbb2229e95b328bc587eb410e536"
+      url "https://github.com/peterbe/gg2/releases/download/v0.0.15/gg-linux-arm64"
+      sha256 "348791c1916ee825e843232ff5391142d6687e203188e07b677780708aec4e04"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/peterbe/gg2/releases/download/v0.0.13/gg-linux-x64"
-      sha256 "3db6b57fac0f4c0af15f13f51dc5127663a6fd8cb12e642900f59d9f82ac86b7"
+      url "https://github.com/peterbe/gg2/releases/download/v0.0.15/gg-linux-x64"
+      sha256 "b78d9dfbc08072b29d7deae1b8576c362d27640688a9fa33dd49725bed846e60"
     end
   end
   license "MIT"
